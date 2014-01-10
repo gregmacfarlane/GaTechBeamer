@@ -1,0 +1,81 @@
+% 2014, Greg Macfarlane
+% Adapted from Nico Schloemer, Universiteit Antwerpen
+%
+
+\mode<presentation>
+
+
+% =========================================================================
+% The Georgia Tech colors% -- The website is unfortunately not to the point there.
+\definecolor{gtnavy}{RGB}{0,41,85}
+\colorlet{gtnavy100}{gtnavy}
+\colorlet{gtnavy75} {gtnavy!75!white}
+\colorlet{gtnavy50} {gtnavy!50!white}
+\colorlet{gtnavy25} {gtnavy!25!white}
+\colorlet{gtnavy10} {gtnavy!10!white}
+\colorlet{gtnavy5}  {gtnavy!5!white}
+
+\definecolor{gtgold}{RGB}{188,160,110}
+\colorlet{gtgold100}{gtgold}
+\colorlet{gtgold75} {gtgold!75!white}
+\colorlet{gtgold50} {gtgold!50!white}
+\colorlet{gtgold25} {gtgold!25!white}
+\colorlet{gtgold10} {gtgold!10!white}
+\colorlet{gtgold5}  {gtgold!5!white}
+
+\definecolor{buzzgold}{RGB}{126,0,47}
+\colorlet{buzzgold100}{buzzgold}
+\colorlet{buzzgold75} {buzzgold!75!white}
+\colorlet{buzzgold50} {buzzgold!50!white}
+\colorlet{buzzgold25} {buzzgold!25!white}
+\colorlet{buzzgold10} {buzzgold!10!white}
+\colorlet{buzzgold5}  {buzzgold!5!white}
+% =========================================================================
+
+
+\ifbeamer@dark%
+
+  \setbeamercolor{structure}{fg=white}%
+  \setbeamercolor{normal text}{fg=white}%
+  \setbeamercolor{frametitle}{fg=white}%
+  \setbeamercolor{frame number in foot}{fg=gtnavy}%
+
+  \setbeamercolor{frame number in head}{fg=white}%
+
+\else%
+
+  \setbeamercolor{structure}{fg=gtnavy}%
+  \setbeamercolor{normal text}{fg=gtnavy}%
+  \setbeamercolor{frametitle}{fg=gtnavy}%
+
+  \setbeamercolor{frame number in foot}{fg=white}%
+
+  \ifbeamer@darktitle%
+      \setbeamercolor{title}{fg=white}%
+      \setbeamercolor{subtitle}{fg=white}%
+  \else
+      \setbeamercolor{subtitle}{fg=gtgold}%
+  \fi
+
+\fi
+
+
+% =======================================================================
+% alert color
+\setbeamercolor{alerted text}{fg=gtgold}
+% =======================================================================
+
+% =======================================================================
+% blocks
+\setbeamercolor{block title}{use=structure,fg=white,bg=gtnavy}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=gtgold}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=gtnavy}
+
+\setbeamercolor{block body}        {fg=gtnavy,use=block title,bg=gtnavy10}
+\setbeamercolor{block body alerted}{fg=gtnavy,use=block title alerted,bg=gtgold10}
+\setbeamercolor{block body example}{fg=gtnavy,use=block title example,bg=gtnavy10}
+% =======================================================================
+
+
+\mode
+<all>
