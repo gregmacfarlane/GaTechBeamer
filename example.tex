@@ -1,0 +1,32 @@
+\documentclass[darktitle, framenumber]{beamer}
+%\usepackage{lmodern}
+
+
+\title{An Example Document}
+\subtitle{With a great subtitle!}
+\author{Greg Macfarlane}
+
+\usetheme{GaTech}
+\usecolortheme{GaTech}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\slideentry}{\advance\beamer@tempdim by -.05cm}{\advance\beamer@tempdim by\beamer@vboxoffset\advance\beamer@tempdim by\beamer@boxsize\advance\beamer@tempdim by 1.2\pgflinewidth}{}{}
+\patchcmd{\slideentry}{\kern\beamer@tempdim}{\advance\beamer@tempdim by 2pt\advance\beamer@tempdim by\wd\beamer@sectionbox\kern\beamer@tempdim}{}{}
+\makeatother
+
+
+
+\begin{document}
+\begin{frame}{}
+	\titlepage
+\end{frame}
+
+\section{Introduction}
+\subsection{intro}
+\begin{frame}{More Information}
+This is where you put your stuff.
+\end{frame}
+
+
+\end{document}

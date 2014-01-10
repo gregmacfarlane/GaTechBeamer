@@ -1,2 +1,18 @@
 
 .beamercolorthemeGaTech.sty.swp
+
+*.swp
+
+*.aux
+
+*.log
+
+*.nav
+
+*.out
+
+*.snm
+
+*.toc
+
+*.eps
